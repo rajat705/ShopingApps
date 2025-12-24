@@ -1,12 +1,14 @@
+// Prisma schema file defining the database models and relations
 generator client {
   provider = "prisma-client-js"
 }
-
+// PostgreSQL database connection
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
+// User model representing application users
 model User {
   id     String  @id @default(uuid())
   email  String  @unique

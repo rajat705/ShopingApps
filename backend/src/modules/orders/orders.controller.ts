@@ -1,28 +1,18 @@
-import {
-  Body,
-  Controller,
-  Post,
-  Req,
-  UseGuards,
-} from "@nestjs/common"
-import { OrdersService } from "./orders.service"
-import { AuthGuard, AuthUser } from "../../common/guards/auth.guard"
-import { CheckoutDto } from "./dto/checkout.dto"
-
-interface RequestWithUser extends Request {
-  user: AuthUser
-}
-
+import { Controller, Post, Req, UseGuards } from "@nestjs/common"
+import { AuthGuard } from "../auth/guards/auth.guard"
+// orders controller
 @Controller("orders")
 @UseGuards(AuthGuard)
-export class OrdersController {
-  constructor(private service: OrdersService) {}
 
+// controller for orders
+export class OrdersController {
   @Post("checkout")
-  checkout(
-    @Req() req: RequestWithUser,
-    @Body() dto: CheckoutDto,
-  ) {
-    return this.service.checkout(req.user.id, dto.items)
+  checkout(@Req() req) {
+    const user = req.user
+    // place order logic here
+    return {
+      message: "Order placed",
+      user,
+    }
   }
 }

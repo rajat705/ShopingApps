@@ -1,16 +1,16 @@
 import { Test } from "@nestjs/testing"
 import { ProductsController } from "./products.controller"
 import { ProductsService } from "./products.service"
-
+// unit tests for ProductsController
 describe("ProductsController", () => {
   let controller: ProductsController
   let service: ProductsService
-
+// mock ProductsService
   const mockProductsService = {
     findAll: jest.fn(),
     findOne: jest.fn(),
   }
-
+// set up testing module
   beforeEach(async () => {
     const moduleRef = await Test.createTestingModule({
       controllers: [ProductsController],
@@ -25,11 +25,11 @@ describe("ProductsController", () => {
     controller = moduleRef.get<ProductsController>(ProductsController)
     service = moduleRef.get<ProductsService>(ProductsService)
   })
-
+// clear mocks after each test
   afterEach(() => {
     jest.clearAllMocks()
   })
-
+// tests for getProducts and getProduct methods
   describe("getProducts", () => {
     it("should return list of products", async () => {
       mockProductsService.findAll.mockResolvedValue([
@@ -42,7 +42,7 @@ describe("ProductsController", () => {
       expect(result.length).toBe(1)
     })
   })
-
+// tests for getProduct method
   describe("getProduct", () => {
     it("should return a single product", async () => {
       mockProductsService.findOne.mockResolvedValue({

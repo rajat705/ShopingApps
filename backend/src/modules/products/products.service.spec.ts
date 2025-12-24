@@ -1,6 +1,6 @@
 import { ProductsService } from "./products.service"
 import { NotFoundException } from "@nestjs/common"
-
+// tests for ProductsService
 describe("ProductsService", () => {
   let service: ProductsService
 
@@ -10,15 +10,15 @@ describe("ProductsService", () => {
       findUnique: jest.fn(),
     },
   }
-
+// set up service before each test
   beforeEach(() => {
     service = new ProductsService(prismaMock as any)
   })
-
+// clear mocks after each test
   afterEach(() => {
     jest.clearAllMocks()
   })
-
+// tests for findAll and findOne methods
   describe("findAll", () => {
     it("should return all products", async () => {
       prismaMock.product.findMany.mockResolvedValue([
@@ -31,7 +31,7 @@ describe("ProductsService", () => {
       expect(result.length).toBe(1)
       expect(result[0].name).toBe("Phone")
     })
-
+// test for search functionality
     it("should apply sorting when sort is provided", async () => {
       prismaMock.product.findMany.mockResolvedValue([])
 
@@ -44,7 +44,7 @@ describe("ProductsService", () => {
       )
     })
   })
-
+// tests for findOne method
   describe("findOne", () => {
     it("should return a product if found", async () => {
       prismaMock.product.findUnique.mockResolvedValue({
@@ -60,7 +60,7 @@ describe("ProductsService", () => {
       })
       expect(result.name).toBe("Laptop")
     })
-
+// test for not found scenario
     it("should throw NotFoundException if product not found", async () => {
       prismaMock.product.findUnique.mockResolvedValue(null)
 
