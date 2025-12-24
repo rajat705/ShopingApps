@@ -1,0 +1,63 @@
+[
+  
+  {
+    "id": "1",
+    "name": "MacBook Pro",
+    "price": 249999,
+    "image": "https://images.unsplash.com/photo-1651761648226-333ab304b2cc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1hY2Jvb2slMjBwcm98ZW58MHx8MHx8fDA%3D"
+  },
+  {
+    "id": "2",
+    "name": "Watch Series 7",
+    "price": 79000,
+    "image": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwbGUlMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": "3",
+    "name": "iPad Pro",
+    "price": 67999,
+    "image": "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGlwYWQlMjBwcm98ZW58MHx8MHx8fDA%3D"
+  },
+  {
+    "id": "4",
+    "name": "iphone 17 Pro",
+    "price": 149999,
+    "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-pro-finish-select-202509-6-3inch-silver?wid=5120&hei=2880&fmt=webp&qlt=90&.v=NUNzdzNKR0FJbmhKWm5YamRHb05tUzkyK3hWak1ybHhtWDkwUXVINFc0RzRIN3Q2Z245Z1F3L1paWlRjZnl6YTF1TmpsTkNoRVRMR1N6UXlVZFBaU0NYR1ZZZnEyMVlVQUliTThGMjNyaFJFRjhVelZBVy8wUHZRSVFLRUJEWEdMR1dOZHMwa2VjYTFxU2tiQm1KKzJB&traceId=1"
+  },
+  {
+    "id": "5",
+    "name": "Earbuds",
+    "price": 3999,
+    "image": "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWFyYnVkc3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": "6",
+    "name": "Samsung Galaxy S23",
+    "price": 84999,
+    "image": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2Ftc3VuZ3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": "7",
+    "name": "iphone 17",
+    "price": 59000,
+    "image": "https://images.unsplash.com/photo-1758348844305-c8351d0d6b45?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGlwaG9uZSUyMDE3JTIwYWlyfGVufDB8fDB8fHww"
+  },
+  {
+    "id": "8",
+    "name": "iPhone 17 Air",
+    "price": 89999,
+    "image": "https://images.unsplash.com/photo-1658060078141-80e89c573b12?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aXBob25lJTIwMTclMjBhaXJ8ZW58MHx8MHx8fDA%3D"
+  },
+  {
+    "id": "9",
+    "name": "Magic Keyboard",
+    "price": 2999,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1165&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": "10",
+    "name": "MacBook",
+    "price": 89999,
+    "image": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1hY2Jvb2slMjBwcm98ZW58MHx8MHx8fDA%3D"
+  }
+]
