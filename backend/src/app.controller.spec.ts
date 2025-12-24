@@ -1,22 +1,20 @@
-import { Test, TestingModule } from '@nestjs/testing';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-// tests for AppController
-describe('AppController', () => {
-  let appController: AppController;
-// set up testing module
+import { Test, TestingModule } from "@nestjs/testing"
+import { AppController } from "./app.controller"
+
+describe("AppController", () => {
+  let appController: AppController
+
   beforeEach(async () => {
     const app: TestingModule = await Test.createTestingModule({
       controllers: [AppController],
-      providers: [AppService],
-    }).compile();
+    }).compile()
 
-    appController = app.get<AppController>(AppController);
-  });
-// test for getHello method
-  describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
-    });
-  });
-});
+    appController = app.get<AppController>(AppController)
+  })
+
+  it("should return backend status", () => {
+    expect(appController.health()).toEqual({
+      status: "Hello, Backend is running",
+    })
+  })
+})
