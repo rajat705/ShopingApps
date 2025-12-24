@@ -6,8 +6,7 @@ export class OrdersService {
   constructor(private prisma: PrismaService) {}
 // checkout method to create an order
   async checkout(
-    userId: string,
-    items: { productId: string; quantity: number }[],
+p0: { name: string; email: string; address: string; }, p1: { productId: string; quantity: number; }[], userId: string, items: { productId: string; quantity: number; }[],
   ) {
     if (!items.length) {
       throw new BadRequestException("Cart is empty")

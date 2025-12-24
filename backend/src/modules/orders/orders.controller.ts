@@ -7,7 +7,8 @@ import { AuthGuard } from "../auth/guards/auth.guard"
 // controller for orders
 export class OrdersController {
   @Post("checkout")
-  checkout(@Req() req) {
+  checkout(@Req()
+req, cartItems: { productId: string; quantity: number }[], p0: any) {
     const user = req.user
     // place order logic here
     return {
